@@ -1,6 +1,6 @@
 """
-Example "Batch analysis from input-images to output-images": python barcode-reader.py [default]
-Example "Analyse individual image and show box": python barcode-reader.py --image input-images/barcode1.jpg
+Example "Batch analysis from input-images to output-images": python barcode-detect.py [default]
+#Example "Analyse individual image and show box": python barcode-detect.py --image input-images/barcode1.jpg
 """
 
 import numpy as np
@@ -10,9 +10,9 @@ import glob
 import os
 
 # construct the argument parse and parse the arguments
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required = False, help = "path to the image file")
-args = vars(ap.parse_args())
+#ap = argparse.ArgumentParser()
+#ap.add_argument("-i", "--image", required = False, help = "path to the image file")
+#args = vars(ap.parse_args())
 
 for filename in glob.iglob('input-images/*.jpg'):
      #print('/foobar/%s' % filename)
